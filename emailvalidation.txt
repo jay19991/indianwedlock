@@ -1,0 +1,10 @@
+if( MatriForm.email.value.length>0)
+{
+			var expression=/^([a-zA-Z0-9\-\._]+)@(([a-zA-Z0-9\-_]+\.)+)([a-z]{2,5})$/;
+			if (!expression.test(document.MatriForm.email.value))
+			{
+      		alert("Please Enter Invalid Email-Id");
+      		document.MatriForm.email.focus();
+      		return false;
+ 			}
+		}
